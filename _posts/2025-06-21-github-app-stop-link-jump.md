@@ -22,9 +22,13 @@ MIUI 12.5，小米6
 默认应用设置 -> 打开链接 -> 下滑找到GitHub -> 打开支持链接 -> 拒绝 
 
 **图片:**
-![步骤一]({{ page.media_subpath | append: 'step1.png' | relative_url }}){: .normal }
-![步骤二]({{ page.media_subpath | append: 'step2.png' | relative_url }}){: .normal }
-![步骤三]({{ page.media_subpath | append: 'step3.png' | relative_url }}){: .normal }
+<!-- ![flow chart 1](https://raw.githubusercontent.com/geassyah/geassyah.github.io/main/img/step1.png){: .normal}
+![flow chart 2](https://raw.githubusercontent.com/geassyah/geassyah.github.io/main/img/step2.png){: .normal}
+![flow chart 3](https://raw.githubusercontent.com/geassyah/geassyah.github.io/main/img/step3.png){: .normal} -->
+
+![flow chart 1]([page.media_subpath/]step1.png){: .normal}
+![flow chart 2]([page.media_subpath/]step2.png){: .normal}
+![flow chart 3]([page.media_subpath/]step3.png){: .normal}
 *详细步骤图*
 
 ## 参考资料
