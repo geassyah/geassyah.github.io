@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "阻止 MIUI 系统用 Chrome 浏览器打开GitHub链接自动跳转 GitHub APP "
-date:   2025-06-21 18:00 +0800
+date:   2025-06-21 18:00:00 +0800
 author: "geassyah"
 categories: [Android, MIUI]
 tags: [Android, MIUI, Github, Chrome]
@@ -21,9 +21,9 @@ MIUI 12.5，小米6
 默认应用设置 -> 打开链接 -> 下滑找到GitHub -> 打开支持链接 -> 拒绝 
 
 **图片:**
-![flow chart 1](https://github.com/geassyah/geassyah.github.io/blob/main/img/步骤图1.png){: .normal}
-![flow chart 2](https://github.com/geassyah/geassyah.github.io/blob/main/img/步骤图2.png){: .normal}
-![flow chart 3](https://github.com/geassyah/geassyah.github.io/blob/main/img/步骤图3.png){: .normal}
+![flow chart 1](/img/step1.png){: .normal}
+![flow chart 2](/img/step2.png){: .normal}
+![flow chart 3](/img/step3.png){: .normal}
 *详细步骤图*
 
 ## 参考资料
