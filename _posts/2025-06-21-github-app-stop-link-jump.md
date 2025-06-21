@@ -26,9 +26,9 @@ MIUI 12.5，小米6
 ![flow chart 2](https://raw.githubusercontent.com/geassyah/geassyah.github.io/main/img/step2.png){: .normal}
 ![flow chart 3](https://raw.githubusercontent.com/geassyah/geassyah.github.io/main/img/step3.png){: .normal} -->
 
-![flow chart 1]([page.media_subpath/]step1.png){: .normal}
-![flow chart 2]([page.media_subpath/]step2.png){: .normal}
-![flow chart 3]([page.media_subpath/]step3.png){: .normal}
+![flow chart 1](step1.png){: .normal}
+![flow chart 2](step2.png){: .normal}
+![flow chart 3](step3.png){: .normal}
 *详细步骤图*
 
 ## 参考资料
