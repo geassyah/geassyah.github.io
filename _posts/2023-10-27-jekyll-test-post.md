@@ -6,7 +6,6 @@ author: "geassyah"
 categories: [Jekyll, Testing]
 tags: [Markdown, 示例, Front Matter, Liquid]
 description: "这是一篇用于测试 Jekyll 博客功能的示例文章，其中包含了各种常见的 Markdown 元素和 Jekyll 特有的 Liquid 标签。"
-image: /assets/images/sample-post-image.jpg # 文章特色图片的可选路径
 comments: true
 published: true
 ---
