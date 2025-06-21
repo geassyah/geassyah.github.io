@@ -28,7 +28,7 @@ MIUI 12.5，小米6
 
 ![flow chart 1](step1.png){: .normal}
 ![flow chart 2](step2.png){: .normal}
-![flow chart 3](step3.png){: .normal}
+![flow chart 3](step3.png){: .normal}{: width="655" height="1126 }
 *详细步骤图*
 
 ## 参考资料
