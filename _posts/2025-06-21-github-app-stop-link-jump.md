@@ -8,6 +8,7 @@ tags: [Android, MIUI, Github, Chrome]
 description: "Github APP 除了验证身份，毫无用处，还会阻止查看功能更强大的 Github 网页页面，必须解决这个问题"
 comments: true
 published: true
+media_subpath: /assets/img/2025-06-21-github-app-stop-link-jump/
 ---
 
 ## 环境
@@ -21,9 +22,9 @@ MIUI 12.5，小米6
 默认应用设置 -> 打开链接 -> 下滑找到GitHub -> 打开支持链接 -> 拒绝 
 
 **图片:**
-![flow chart 1](https://raw.githubusercontent.com/geassyah/geassyah.github.io/main/img/step1.png){: .normal}
-![flow chart 2](https://raw.githubusercontent.com/geassyah/geassyah.github.io/main/img/step2.png){: .normal}
-![flow chart 3](https://raw.githubusercontent.com/geassyah/geassyah.github.io/main/img/step3.png){: .normal}
+![步骤一]({{ page.media_subpath | append: 'step1.png' | relative_url }}){: .normal }
+![步骤二]({{ page.media_subpath | append: 'step2.png' | relative_url }}){: .normal }
+![步骤三]({{ page.media_subpath | append: 'step3.png' | relative_url }}){: .normal }
 *详细步骤图*
 
 ## 参考资料
