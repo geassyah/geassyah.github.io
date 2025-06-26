@@ -2,7 +2,6 @@
 layout: post
 title:  "阻止 MIUI 系统用 Chrome 浏览器打开GitHub链接自动跳转 GitHub APP "
 date:   2025-06-21 18:00:00 +0800
-author: "geassyah"
 categories: [Android, MIUI]
 tags: [Android, MIUI, Github, Chrome]
 description: "Github APP 除了验证身份，毫无用处，还会阻止查看功能更强大的 Github 网页页面，必须解决这个问题"

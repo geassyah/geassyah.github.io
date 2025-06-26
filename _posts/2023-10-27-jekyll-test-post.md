@@ -2,7 +2,6 @@
 layout: post
 title:  "欢迎来到 Jekyll 世界：一篇测试文章"
 date:   2023-10-27 10:30:00 +0800
-author: "geassyah"
 categories: [Jekyll, Testing]
 tags: [Markdown, 示例, Front Matter, Liquid]
 description: "这是一篇用于测试 Jekyll 博客功能的示例文章，其中包含了各种常见的 Markdown 元素和 Jekyll 特有的 Liquid 标签。"

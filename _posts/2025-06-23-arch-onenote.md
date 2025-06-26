@@ -2,7 +2,6 @@
 layout: post
 title:  " arch onenote 配置 "
 date:   2025-06-23 21:20:00 +0800
-author: "geassyah"
 categories: [Linux, Arch]
 tags: [Linux, onenote]
 description: " 简单记录 docker 命令以及遇到的问题 "
@@ -15,7 +14,7 @@ media_subpath: /assets/img/
 
 使用 onedrive --display-config 命令查看当前的配置情况
 
-```routeros
+```yaml
 onedrive version                             = vX.Y.Z-A-bcdefghi
 Config path                                  = /home/alex/.config/onedrive
 Config file found in config path             = true

@@ -1,11 +1,7 @@
 ---
-
-```markdown
----
 layout: post
 title:  "Windows + ArchLinux 双系统双硬盘安装"
 date:   2025-06-22 21:20:00 +0800
-author: "geassyah"
 categories: [Linux, Arch]
 tags: [Linux, Arch, Windows, 双系统]
 description: "已安装 Win10/11，在保留原有 Windows 系统和数据的情况下，使用第二块硬盘安装 Arch Linux，实现双系统独立引导。"
