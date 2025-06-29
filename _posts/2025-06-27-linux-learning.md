@@ -26,7 +26,7 @@ sudo systemctl stop docker  #停用 docker
 ```bash
 sudo systemctl stop docker  #停用 docker 
 ```
-
+- **'pwd'命令**
 
 ## 参考资料
 

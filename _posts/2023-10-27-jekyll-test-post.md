@@ -89,3 +89,9 @@ end
 
 hello_jekyll()
 ```
+
+## 参考资料
+
+- [Getting Start | Chirpy](https://chirpy.cotes.page/posts/getting-started/)
+- [Writing a Post | Chirpy](https://chirpy.cotes.page/posts/write-a-new-post/)
+- [Text and Typography | Chirpy](https://chirpy.cotes.page/posts/text-and-typography/)

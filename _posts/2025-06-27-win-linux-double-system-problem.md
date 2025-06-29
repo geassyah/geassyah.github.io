@@ -14,9 +14,13 @@ media_subpath: /assets/img/
 
 - pacman 换源 / 速度慢
   - /etc/config/
+- 双系统换行符不兼容
+  - 不用 win 编辑器打开
+  - sed 批量替换
 - git 问题
   - 在 win 的所属硬盘空间创建仓库， VSCode 无法识别仓库
     该路径执行 git ignore 命令
+  - 
 
 
 ### 参考资料
