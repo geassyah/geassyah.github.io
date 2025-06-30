@@ -18,25 +18,25 @@ docker 又太占内存，再套个 docker 酒馆就不能加其他东西，遂�
 
 ## 部署记录
 
-1. 环境配置
+### 1. 环境配置
 ```shell
 # 使用 nvm 安装 node 和 npm ( debian 版 )
-# 1. 安装 nvm
+# 1.安装 nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
-# 2. 加载环境变量
+# 2.加载环境变量
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# 3. 安装指定版本（ 版本过低酒馆无法运行 ）
+# 3.安装指定版本（ 版本过低酒馆无法运行 ）
 nvm install 24.2.0
 
-# 4. 设置默认版本
+# 4.设置默认版本
 nvm alias default 24.2.0
 
 ```
 
-2. 主程序源代码下载
+### 2. 主程序源代码下载
 ```shell
 # 克隆 staging 分支并切换到 1.12.14 版本
 cd ~
@@ -47,7 +47,7 @@ git fetch origin tag 1.12.14 --depth 1
 git checkout 1.12.14
 ```
 
-3. 插件安装
+### 3. 插件安装
 ```shell
 # 安装 github 云备份插件及依赖
 cd plugins
@@ -56,14 +56,15 @@ cd cloud-saves
 npm install
 ```
 
-4. 主程序安装
+### 4. 主程序安装
 ```shell
 # 安装酒馆依赖并启动
 cd ../..
 chmod +x ./start.sh
 ./start.sh 
 ```
-5. 扩展安装
+
+### 5. ( 可选 )扩展安装
 ```shell
 # 为所有用户安装扩展
 cd ~/SillyTavern/data/default-user/extensions
@@ -72,7 +73,7 @@ git clone https://github.com/ZerxZ/SillyTavern-Extension-ZerxzLib --depth 1
 git clone https://codeberg.org/zonde306/ST-Prompt-Template  --depth 1
 ```
 
-5. ( 可选 ) PM2 设置开机后台自启动
+### 6. ( 可选 ) PM2 设置开机后台自启动
 ```shell
 npm install -g pm2
 pm2 start --name sillytavern ./start.sh
@@ -83,34 +84,35 @@ pm2 startup
 pm2 logs sillytavern
 ```
 
-6. ( 可选 ) docker 卸载
+### 7. ( 可选 ) docker 卸载
 ```shell
-# 1. 停止所有Docker容器和服务
+# 1.停止所有Docker容器和服务
 sudo docker stop $(sudo docker ps -aq) 2>/dev/null
 sudo systemctl stop docker.socket
 sudo systemctl stop docker
 
-# 2. 卸载Docker引擎和CLI
+# 2.卸载Docker引擎和CLI
 sudo apt-get purge -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-# 3. 删除残留文件和配置
+# 3.删除残留文件和配置
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 sudo rm -rf /etc/docker
 sudo rm -rf /etc/default/docker
 sudo rm -rf /var/run/docker.sock
 
-# 4. 删除Docker用户组
+# 4.删除Docker用户组
 sudo groupdel docker
 
-# 5. 检查docker命令是否存在
+# 5.检查docker命令是否存在
 which docker || echo "Docker已成功移除"
 ```
 
 ## 问题与解决
 - **云酒馆启动失败，node.js包安装失败，路径下找不到js文件**
+  
   报错日志：
-  ```yaml
+  ```shell
   root@hcss-ecs-21ea:/home/SillyTavern# ./start.sh
   Installing Node Modules...
 
@@ -165,15 +167,16 @@ which docker || echo "Docker已成功移除"
   因为两者都涉及到 node.js 依赖包的安装，插件的依赖覆盖了主程序的依赖版本。
   遇到这种情况，单纯清除依赖包和对应缓存是不行的，得直接删除所有文件，重新开始安装。
 
-
-
-
+- **云酒馆经常有红色弹窗，ENOENT ERROR**
+  
+  ENOENT - "Error No Entity" - 错误实体不存在。
+  原因是程序尝试访问的文件或路径不存在，存档部分聊天记录丢失，无视即可。
 
 ## 致谢
 
 - Gemini 2.5 pro
 - Deepseek V3 0324
-- ( SillyTavern 官方安装指南 )[https://docs.sillytavern.app]
+- [SillyTavern 官方安装指南](https://docs.sillytavern.app)
 
 
 

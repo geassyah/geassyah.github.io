@@ -4,11 +4,15 @@ title:  " arch onenote 配置 "
 date:   2025-06-23 21:20:00 +0800
 categories: [Linux, Arch]
 tags: [Linux, onenote]
-description: " 简单记录 docker 命令以及遇到的问题 "
+description: " 在 Arch 安装 onenote 流程记录 "
 comments: true
 published: true
 media_subpath: /assets/img/
 ---
+
+## 前言
+
+安装的是 P3X-onenote，基本是网页套壳，全局搜索功能不能用，切换页面需要加载一段时间，缺点无法接受，还是得用 wine 版。
 
 ## onedrive 配置文件
 
@@ -34,7 +38,7 @@ Config option 'webhook_enabled'              = false
 ## onedrive 同步命令
 
 ```bash
-onedrive --synchronize
+onedrive --synchronize #等同于 onedrive -s
 ```
 
 ## 参考资料

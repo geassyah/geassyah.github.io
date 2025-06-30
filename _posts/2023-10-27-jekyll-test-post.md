@@ -89,6 +89,10 @@ end
 
 hello_jekyll()
 ```
+```shell
+# 本地博客构建
+bundle exec jekyll serve
+```
 
 ## 参考资料
 
